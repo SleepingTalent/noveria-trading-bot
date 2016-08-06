@@ -2,17 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.noveria</groupId>
-  <artifactId>noveria-trading-bot-parent</artifactId>
-  <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>noveria-trading-bot-core</module>
-        <module>oanda-rest-api</module>
-        <module>noveria-trading-bot-app</module>
-    </modules>
-    <packaging>pom</packaging>
+   <parent>
+        <groupId>com.noveria</groupId>
+        <artifactId>noveria-trading-bot-parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+    </parent>
+  
+  <artifactId>noveria-trading-bot-app</artifactId>
+  <packaging>jar</packaging>
 
-  <name>noveria-trading-bot-parent</name>
+  <name>noveria-trading-bot-app</name>
   <url>http://maven.apache.org</url>
 
   <properties>

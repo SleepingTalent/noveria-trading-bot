@@ -5,12 +5,12 @@
   <groupId>com.noveria</groupId>
   <artifactId>noveria-trading-bot-parent</artifactId>
   <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>noveria-trading-bot-core</module>
+  <packaging>pom</packaging>
+   <modules>
+		<module>noveria-trading-bot-core</module>
         <module>oanda-rest-api</module>
         <module>noveria-trading-bot-app</module>
     </modules>
-    <packaging>pom</packaging>
 
   <name>noveria-trading-bot-parent</name>
   <url>http://maven.apache.org</url>
