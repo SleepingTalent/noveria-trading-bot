@@ -35,14 +35,14 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.eventbus.AllowConcurrentEvents;
 import com.google.common.eventbus.Subscribe;
-import com.precioustech.fxtrading.TradingDecision;
-import com.precioustech.fxtrading.TradingSignal;
-import com.precioustech.fxtrading.instrument.InstrumentService;
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
-import com.precioustech.fxtrading.marketdata.MarketDataPayLoad;
-import com.precioustech.fxtrading.marketdata.PipJumpCutOffCalculator;
-import com.precioustech.fxtrading.trade.strategies.TradingStrategy;
-import com.precioustech.fxtrading.tradingbot.TradingConfig;
+import com.noveria.fxtrading.TradingDecision;
+import com.noveria.fxtrading.TradingSignal;
+import com.noveria.fxtrading.instrument.InstrumentService;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.MarketDataPayLoad;
+import com.noveria.fxtrading.marketdata.PipJumpCutOffCalculator;
+import com.noveria.fxtrading.trade.strategies.TradingStrategy;
+import com.noveria.fxtrading.tradingbot.TradingConfig;
 
 @TradingStrategy
 public class FadeTheMoveStrategy<T> {

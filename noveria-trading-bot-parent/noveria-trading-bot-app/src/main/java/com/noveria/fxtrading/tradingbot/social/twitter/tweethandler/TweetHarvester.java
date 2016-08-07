@@ -17,9 +17,9 @@ package com.noveria.fxtrading.tradingbot.social.twitter.tweethandler;
 
 import java.util.Collection;
 
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
-import com.precioustech.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
 
 public interface TweetHarvester<T> {
 

@@ -15,7 +15,7 @@
  */
 package com.noveria.fxtrading.tradingbot.social.twitter;
 
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
 
 public abstract class FXTradeTweet<T> {
 	private final TradeableInstrument<T> instrument;

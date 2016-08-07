@@ -27,11 +27,11 @@ import org.springframework.mail.javamail.JavaMailSender;
 import com.google.common.base.Preconditions;
 import com.google.common.eventbus.AllowConcurrentEvents;
 import com.google.common.eventbus.Subscribe;
-import com.precioustech.fxtrading.events.Event;
-import com.precioustech.fxtrading.events.EventPayLoad;
-import com.precioustech.fxtrading.events.notification.email.EmailContentGenerator;
-import com.precioustech.fxtrading.events.notification.email.EmailPayLoad;
-import com.precioustech.fxtrading.tradingbot.TradingConfig;
+import com.noveria.fxtrading.events.Event;
+import com.noveria.fxtrading.events.EventPayLoad;
+import com.noveria.fxtrading.events.notification.email.EmailContentGenerator;
+import com.noveria.fxtrading.events.notification.email.EmailPayLoad;
+import com.noveria.fxtrading.tradingbot.TradingConfig;
 
 public class EventEmailNotifier<T> {
 

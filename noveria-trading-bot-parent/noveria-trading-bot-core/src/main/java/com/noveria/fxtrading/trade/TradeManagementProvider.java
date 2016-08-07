@@ -1,23 +1,6 @@
-/*
- *  Copyright 2015 Shekhar Varshney
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
 package com.noveria.fxtrading.trade;
 
 import java.util.Collection;
-
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
 
 /**
  * A provider of RUD operations on a single Trade. Normally Trades are grouped
@@ -29,7 +12,6 @@ import com.precioustech.fxtrading.instrument.TradeableInstrument;
  * A bulk operation to closeAll trades is deliberately left out to avoid
  * potential misuse.
  * 
- * @author Shekhar Varshney
  *
  * @param <M>
  *            The type of tradeId
@@ -37,7 +19,6 @@ import com.precioustech.fxtrading.instrument.TradeableInstrument;
  *            The type of instrumentId in class TradeableInstrument
  * @param <K>
  *            The type of accountId
- * @see TradeableInstrument
  */
 public interface TradeManagementProvider<M, N, K> {
 

@@ -1,4 +1,3 @@
-
 package com.noveria.fxtrading.order;
 
 import java.util.Collection;

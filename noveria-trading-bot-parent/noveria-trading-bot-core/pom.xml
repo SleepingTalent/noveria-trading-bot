@@ -13,7 +13,6 @@
 
   <name>noveria-trading-bot-core</name>
   <url>http://maven.apache.org</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <log4j.version>1.2.16</log4j.version>
@@ -22,8 +21,8 @@
     <commons.httpclient.version>4.3.5</commons.httpclient.version>
     <guava.version>18.0</guava.version>
     <commons.io>1.3.2</commons.io>
+    <jdk.version>1.8</jdk.version>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -69,5 +68,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  <build>
+    <defaultGoal>install</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

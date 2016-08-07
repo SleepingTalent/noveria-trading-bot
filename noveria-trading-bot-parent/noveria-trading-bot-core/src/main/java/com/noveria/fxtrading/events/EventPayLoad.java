@@ -1,4 +1,3 @@
-
 package com.noveria.fxtrading.events;
 
 public class EventPayLoad<T> {

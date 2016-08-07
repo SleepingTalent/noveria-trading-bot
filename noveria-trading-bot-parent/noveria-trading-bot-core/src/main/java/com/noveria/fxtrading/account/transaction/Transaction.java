@@ -1,4 +1,3 @@
-
 package com.noveria.fxtrading.account.transaction;
 
 import com.noveria.fxtrading.TradingSignal;

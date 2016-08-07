@@ -25,9 +25,9 @@ import org.springframework.social.twitter.api.Twitter;
 
 import com.google.common.eventbus.AllowConcurrentEvents;
 import com.google.common.eventbus.Subscribe;
-import com.precioustech.fxtrading.events.Event;
-import com.precioustech.fxtrading.events.EventPayLoad;
-import com.precioustech.fxtrading.events.EventPayLoadToTweet;
+import com.noveria.fxtrading.events.Event;
+import com.noveria.fxtrading.events.EventPayLoad;
+import com.noveria.fxtrading.events.EventPayLoadToTweet;
 
 public class TweetFXTradeService<K, T extends EventPayLoad<K>> {
 	

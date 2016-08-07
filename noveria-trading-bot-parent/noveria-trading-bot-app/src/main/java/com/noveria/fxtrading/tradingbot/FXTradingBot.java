@@ -19,8 +19,8 @@ import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.precioustech.fxtrading.streaming.events.EventsStreamingService;
-import com.precioustech.fxtrading.streaming.marketdata.MarketDataStreamingService;
+import com.noveria.fxtrading.streaming.events.EventsStreamingService;
+import com.noveria.fxtrading.streaming.marketdata.MarketDataStreamingService;
 
 public class FXTradingBot {
 

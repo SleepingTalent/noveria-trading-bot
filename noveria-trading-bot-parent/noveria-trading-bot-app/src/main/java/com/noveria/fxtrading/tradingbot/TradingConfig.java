@@ -15,7 +15,7 @@
  */
 package com.noveria.fxtrading.tradingbot;
 
-import com.precioustech.fxtrading.BaseTradingConfig;
+import com.noveria.fxtrading.BaseTradingConfig;
 
 public class TradingConfig extends BaseTradingConfig {
 

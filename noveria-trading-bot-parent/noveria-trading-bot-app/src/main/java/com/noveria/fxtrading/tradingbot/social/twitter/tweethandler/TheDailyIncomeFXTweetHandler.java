@@ -15,10 +15,10 @@
  */
 package com.noveria.fxtrading.tradingbot.social.twitter.tweethandler;
 
-import com.precioustech.fxtrading.TradingSignal;
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
-import com.precioustech.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
+import com.noveria.fxtrading.TradingSignal;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
 
 public class TheDailyIncomeFXTweetHandler extends ZuluTrader101FXTweetHandler {
 

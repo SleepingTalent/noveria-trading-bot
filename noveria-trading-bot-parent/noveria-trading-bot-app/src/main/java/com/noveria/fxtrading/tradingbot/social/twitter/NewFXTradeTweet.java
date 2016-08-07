@@ -15,8 +15,8 @@
  */
 package com.noveria.fxtrading.tradingbot.social.twitter;
 
-import com.precioustech.fxtrading.TradingSignal;
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.TradingSignal;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
 
 public class NewFXTradeTweet<T> extends FXTradeTweet<T> {
 	private final double stopLoss, takeProfit;

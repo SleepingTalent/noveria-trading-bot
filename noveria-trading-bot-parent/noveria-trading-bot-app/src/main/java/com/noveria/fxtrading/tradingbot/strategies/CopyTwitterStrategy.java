@@ -31,17 +31,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.twitter.api.Tweet;
 
 import com.google.common.collect.Lists;
-import com.precioustech.fxtrading.TradingDecision;
-import com.precioustech.fxtrading.TradingSignal;
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
-import com.precioustech.fxtrading.marketdata.CurrentPriceInfoProvider;
-import com.precioustech.fxtrading.marketdata.Price;
-import com.precioustech.fxtrading.trade.strategies.TradingStrategy;
-import com.precioustech.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.FXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.tweethandler.FXTweetHandler;
-import com.precioustech.fxtrading.tradingbot.social.twitter.tweethandler.TweetHarvester;
+import com.noveria.fxtrading.TradingDecision;
+import com.noveria.fxtrading.TradingSignal;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.CurrentPriceInfoProvider;
+import com.noveria.fxtrading.marketdata.Price;
+import com.noveria.fxtrading.trade.strategies.TradingStrategy;
+import com.noveria.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.FXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.tweethandler.FXTweetHandler;
+import com.noveria.fxtrading.tradingbot.social.twitter.tweethandler.TweetHarvester;
 
 @TradingStrategy
 public class CopyTwitterStrategy<T> implements TweetHarvester<T> {

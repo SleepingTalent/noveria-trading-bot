@@ -1,4 +1,3 @@
-
 package com.noveria.fxtrading;
 
 public class TradingConstants {

@@ -1,7 +1,7 @@
-
 package com.noveria.fxtrading.order;
 
 import com.noveria.fxtrading.TradingSignal;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
 
 public class Order<M, N> {
 	private final TradeableInstrument<M> instrument;

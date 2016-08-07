@@ -1,4 +1,3 @@
-
 package com.noveria.fxtrading.events.notification.email;
 
 public class EmailPayLoad {

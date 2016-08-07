@@ -1,4 +1,3 @@
-
 package com.noveria.fxtrading.order;
 
 import com.noveria.fxtrading.instrument.TradeableInstrument;
@@ -10,8 +9,7 @@ import java.util.Collection;
  * placed for a given instrument and/or an accountId. An accountId may not be
  * required if only a single account is allowed by the platform provider, in
  * which case all orders are created under the default account.
- * 
- * @author Shekhar Varshney
+ *
  *
  * @param <M>
  *            The type of orderId

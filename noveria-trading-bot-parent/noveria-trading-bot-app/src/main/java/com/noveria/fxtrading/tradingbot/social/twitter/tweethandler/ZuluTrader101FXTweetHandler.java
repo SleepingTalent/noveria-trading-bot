@@ -20,12 +20,12 @@ import java.util.Collection;
 import org.springframework.social.twitter.api.SearchResults;
 import org.springframework.social.twitter.api.Tweet;
 
-import com.precioustech.fxtrading.TradingConstants;
-import com.precioustech.fxtrading.TradingSignal;
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
-import com.precioustech.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.FXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
+import com.noveria.fxtrading.TradingConstants;
+import com.noveria.fxtrading.TradingSignal;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.FXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
 
 public class ZuluTrader101FXTweetHandler extends AbstractFXTweetHandler<String> {
 

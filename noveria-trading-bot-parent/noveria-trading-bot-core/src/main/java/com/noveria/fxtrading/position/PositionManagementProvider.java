@@ -1,4 +1,3 @@
-
 package com.noveria.fxtrading.position;
 
 import com.noveria.fxtrading.instrument.TradeableInstrument;
@@ -19,7 +18,6 @@ import java.util.Collection;
  * order/trade event or 2) regularly refresh the cache after a given time
  * period.
  * 
- * @author Shekhar Varshney
  *
  * @param <M>
  *            The type of instrumentId in class TradeableInstrument

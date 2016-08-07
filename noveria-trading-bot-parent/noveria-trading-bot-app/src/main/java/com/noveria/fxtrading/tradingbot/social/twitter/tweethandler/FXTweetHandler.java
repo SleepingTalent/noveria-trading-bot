@@ -19,8 +19,8 @@ import java.util.Collection;
 
 import org.springframework.social.twitter.api.Tweet;
 
-import com.precioustech.fxtrading.instrument.TradeableInstrument;
-import com.precioustech.fxtrading.tradingbot.social.twitter.FXTradeTweet;
+import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.tradingbot.social.twitter.FXTradeTweet;
 
 
 public interface FXTweetHandler<T> {

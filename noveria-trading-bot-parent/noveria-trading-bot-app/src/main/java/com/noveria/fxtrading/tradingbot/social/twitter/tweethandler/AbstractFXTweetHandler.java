@@ -29,11 +29,11 @@ import org.springframework.social.twitter.api.Twitter;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Lists;
-import com.precioustech.fxtrading.helper.ProviderHelper;
-import com.precioustech.fxtrading.instrument.InstrumentService;
-import com.precioustech.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
-import com.precioustech.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
-import com.precioustech.fxtrading.utils.TradingUtils;
+import com.noveria.fxtrading.helper.ProviderHelper;
+import com.noveria.fxtrading.instrument.InstrumentService;
+import com.noveria.fxtrading.tradingbot.social.twitter.CloseFXTradeTweet;
+import com.noveria.fxtrading.tradingbot.social.twitter.NewFXTradeTweet;
+import com.noveria.fxtrading.utils.TradingUtils;
 
 public abstract class AbstractFXTweetHandler<T> implements FXTweetHandler<T> {
 
