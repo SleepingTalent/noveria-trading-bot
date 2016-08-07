@@ -1,19 +1,14 @@
-/*
- *  Copyright 2015 Shekhar Varshney
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
 package com.noveria.fxtrading.oanda.restapi.trade;
+
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.id;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.instrument;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.price;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.side;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.stopLoss;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.takeProfit;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.time;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.trades;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.units;
 
 import java.util.Collection;
 import java.util.List;

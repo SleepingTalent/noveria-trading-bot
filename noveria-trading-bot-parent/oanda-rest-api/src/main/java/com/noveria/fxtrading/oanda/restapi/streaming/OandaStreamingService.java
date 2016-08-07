@@ -1,5 +1,7 @@
 package com.noveria.fxtrading.oanda.restapi.streaming;
 
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.heartbeat;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.time;
 
 import java.io.BufferedReader;
 import java.io.InputStream;

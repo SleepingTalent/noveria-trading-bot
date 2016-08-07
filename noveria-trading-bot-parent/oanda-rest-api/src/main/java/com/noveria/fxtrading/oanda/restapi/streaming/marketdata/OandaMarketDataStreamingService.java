@@ -1,19 +1,11 @@
-/*
- *  Copyright 2015 Shekhar Varshney
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
 package com.noveria.fxtrading.oanda.restapi.streaming.marketdata;
+
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.ask;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.bid;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.disconnect;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.heartbeat;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.tick;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.time;
 
 import java.io.BufferedReader;
 import java.util.Collection;
@@ -21,6 +13,7 @@ import java.util.Collection;
 import com.noveria.fxtrading.TradingConstants;
 import com.noveria.fxtrading.heartbeats.HeartBeatCallback;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.MarketEventCallback;
 import com.noveria.fxtrading.oanda.restapi.OandaConstants;
 import com.noveria.fxtrading.oanda.restapi.OandaJsonKeys;
 import com.noveria.fxtrading.oanda.restapi.streaming.OandaStreamingService;

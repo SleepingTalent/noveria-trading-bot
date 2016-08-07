@@ -1,11 +1,16 @@
-
 package com.noveria.fxtrading.oanda.restapi.marketdata;
+
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.ask;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.bid;
+import static com.noveria.fxtrading.oanda.restapi.OandaJsonKeys.time;
 
 import java.util.Collection;
 import java.util.Map;
 
 import com.noveria.fxtrading.TradingConstants;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.CurrentPriceInfoProvider;
+import com.noveria.fxtrading.marketdata.Price;
 import com.noveria.fxtrading.oanda.restapi.OandaConstants;
 import com.noveria.fxtrading.oanda.restapi.OandaJsonKeys;
 import com.noveria.fxtrading.oanda.restapi.utils.OandaUtils;
