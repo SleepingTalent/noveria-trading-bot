@@ -14,6 +14,8 @@ import com.noveria.fxtrading.TradingConstants;
 import com.noveria.fxtrading.TradingSignal;
 import com.noveria.fxtrading.TradingTestConstants;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.historic.CandleStickGranularity;
+import com.noveria.fxtrading.marketdata.historic.MovingAverageCalculationService;
 import com.noveria.fxtrading.trade.TradeInfoService;
 import org.junit.Test;
 

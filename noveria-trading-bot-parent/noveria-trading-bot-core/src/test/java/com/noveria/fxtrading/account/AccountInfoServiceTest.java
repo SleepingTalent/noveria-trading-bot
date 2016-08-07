@@ -16,6 +16,8 @@ import com.noveria.fxtrading.BaseTradingConfig;
 import com.noveria.fxtrading.TradingTestConstants;
 import com.noveria.fxtrading.helper.ProviderHelper;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.CurrentPriceInfoProvider;
+import com.noveria.fxtrading.marketdata.Price;
 import org.joda.time.DateTime;
 import org.junit.Test;
 

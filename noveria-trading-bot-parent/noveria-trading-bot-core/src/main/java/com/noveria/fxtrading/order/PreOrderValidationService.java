@@ -5,6 +5,8 @@ import java.util.Collection;
 import com.noveria.fxtrading.BaseTradingConfig;
 import com.noveria.fxtrading.TradingSignal;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.historic.CandleStickGranularity;
+import com.noveria.fxtrading.marketdata.historic.MovingAverageCalculationService;
 import com.noveria.fxtrading.trade.TradeInfoService;
 import com.noveria.fxtrading.utils.TradingUtils;
 import org.apache.log4j.Logger;

@@ -7,6 +7,7 @@ import static org.mockito.Mockito.when;
 
 import java.util.List;
 
+import com.noveria.fxtrading.TradingTestConstants;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.joda.time.DateTime;

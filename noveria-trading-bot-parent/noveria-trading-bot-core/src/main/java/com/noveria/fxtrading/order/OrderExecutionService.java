@@ -12,6 +12,8 @@ import com.noveria.fxtrading.TradingDecision;
 import com.noveria.fxtrading.TradingSignal;
 import com.noveria.fxtrading.account.AccountInfoService;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.CurrentPriceInfoProvider;
+import com.noveria.fxtrading.marketdata.Price;
 import org.apache.log4j.Logger;
 
 import com.google.common.collect.Lists;

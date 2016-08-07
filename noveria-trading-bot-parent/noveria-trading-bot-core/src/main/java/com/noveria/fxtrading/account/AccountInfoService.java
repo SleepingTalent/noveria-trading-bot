@@ -11,6 +11,8 @@ import com.google.common.collect.Lists;
 import com.noveria.fxtrading.BaseTradingConfig;
 import com.noveria.fxtrading.helper.ProviderHelper;
 import com.noveria.fxtrading.instrument.TradeableInstrument;
+import com.noveria.fxtrading.marketdata.CurrentPriceInfoProvider;
+import com.noveria.fxtrading.marketdata.Price;
 import com.noveria.fxtrading.utils.TradingUtils;
 
 public class AccountInfoService<K, N> {
