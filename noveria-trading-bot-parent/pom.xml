@@ -8,6 +8,7 @@
     <modules>
         <module>noveria-trading-bot-core</module>
         <module>oanda-rest-api</module>
+        <module>oanda-rest-api-acceptance-test</module>
         <module>noveria-trading-bot-app</module>
     </modules>
     <packaging>pom</packaging>

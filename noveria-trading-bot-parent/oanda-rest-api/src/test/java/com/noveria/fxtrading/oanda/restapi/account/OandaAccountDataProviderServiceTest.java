@@ -37,8 +37,8 @@ public class OandaAccountDataProviderServiceTest {
 	// FileInputStream reread once closed
 	@Test
 	public void allAccountsTest() throws Exception {
-		final OandaAccountDataProviderService service = new OandaAccountDataProviderService(url, userName, accessToken);
-		assertEquals("https://api-fxtrade.oanda.com/v1/accounts?username=testTrader", service.getAllAccountsUrl());
+		final OandaAccountDataProviderService service = new OandaAccountDataProviderService(url, accessToken);
+		assertEquals("https://api-fxtrade.oanda.com/v1/accounts", service.getAllAccountsUrl());
 		OandaAccountDataProviderService spy = createSpyAndCommonStuff("src/test/resources/accountsAll.txt", service);
 		spy.getLatestAccountInfo();
 		verify(spy, times(1)).getSingleAccountUrl(1898212L);
@@ -47,7 +47,7 @@ public class OandaAccountDataProviderServiceTest {
 
 	@Test
 	public void accountIdTest() throws Exception {
-		final OandaAccountDataProviderService service = new OandaAccountDataProviderService(url, userName, accessToken);
+		final OandaAccountDataProviderService service = new OandaAccountDataProviderService(url, accessToken);
 		assertEquals("https://api-fxtrade.oanda.com/v1/accounts/123456", service.getSingleAccountUrl(accountId));
 
 		OandaAccountDataProviderService spy = createSpyAndCommonStuff("src/test/resources/account123456.txt", service);

@@ -34,9 +34,12 @@ public class OandaMarketDataStreamingService extends OandaStreamingService imple
 	public OandaMarketDataStreamingService(String url, String accessToken, long accountId,
 			Collection<TradeableInstrument<String>> instruments, MarketEventCallback<String> marketEventCallback,
 			HeartBeatCallback<DateTime> heartBeatCallback, String heartbeatSourceId) {
+
 		super(accessToken, heartBeatCallback, heartbeatSourceId);
+
 		this.url = url + OandaConstants.PRICES_RESOURCE + "?accountId=" + accountId + "&instruments="
 				+ instrumentsAsCsv(instruments);
+
 		this.marketEventCallback = marketEventCallback;
 	}
 
@@ -70,15 +73,21 @@ public class OandaMarketDataStreamingService extends OandaStreamingService imple
 	@Override
 	public void startMarketDataStreaming() {
 		stopMarketDataStreaming();
+
 		this.streamThread = new Thread(new Runnable() {
 
 			@Override
 			public void run() {
+
 				CloseableHttpClient httpClient = getHttpClient();
+
 				try {
 					BufferedReader br = setUpStreamIfPossible(httpClient);
+
 					if (br != null) {
+
 						String line;
+
 						while ((line = br.readLine()) != null && serviceUp) {
 							Object obj = JSONValue.parse(line);
 							JSONObject instrumentTick = (JSONObject) obj;

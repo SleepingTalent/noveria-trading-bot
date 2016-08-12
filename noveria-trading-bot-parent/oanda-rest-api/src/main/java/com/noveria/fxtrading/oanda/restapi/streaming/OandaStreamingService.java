@@ -58,12 +58,18 @@ public abstract class OandaStreamingService implements HeartBeatStreamingService
 	}
 
 	protected BufferedReader setUpStreamIfPossible(CloseableHttpClient httpClient) throws Exception {
+
 		HttpUriRequest httpGet = new HttpGet(getStreamingUrl());
 		httpGet.setHeader(authHeader);
 		httpGet.setHeader(OandaConstants.UNIX_DATETIME_HEADER);
+
 		LOG.info(TradingUtils.executingRequestMsg(httpGet));
+
 		HttpResponse resp = httpClient.execute(httpGet);
 		HttpEntity entity = resp.getEntity();
+
+		LOG.info("Response : "+entity.toString());
+
 		if (resp.getStatusLine().getStatusCode() == HttpStatus.SC_OK && entity != null) {
 			InputStream stream = entity.getContent();
 			serviceUp = true;

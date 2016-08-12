@@ -11,7 +11,6 @@ public class Account<T> {
 	private final long openTrades;
 	private final String currency;
 	private final T accountId;
-	private final String toStr;
 	private final double amountAvailableRatio;/*The amount available to trade as a fraction of total amount*/
 	private final double marginRate;/*The leverage offered on this account. for e.g. 0.05, 0.1 etc*/
 	private final int hash;
@@ -34,11 +33,6 @@ public class Account<T> {
 		this.netAssetValue = this.marginUsed + this.marginAvailable;
 		this.marginRate = marginRate;
 		this.hash = calcHashCode();
-		toStr = String.format("Currency=%s,NAV=%5.2f,Total Balance=%5.2f, UnrealisedPnl=%5.2f, "
-				+ "RealisedPnl=%5.2f, MarginUsed=%5.2f, MarginAvailable=%5.2f,"
-				+ " OpenTrades=%d, amountAvailableRatio=%1.2f, marginRate=%1.2f", currency, netAssetValue,
-				totalBalance, unrealisedPnl, realisedPnl, marginUsed, marginAvailable, openTrades,
-				this.amountAvailableRatio, this.marginRate);
 	}
 
 	public double getAmountAvailableRatio() {
@@ -51,7 +45,11 @@ public class Account<T> {
 
 	@Override
 	public String toString() {
-		return this.toStr;
+		return String.format("AccountId=%s,Currency=%s,NAV=%5.2f,Total Balance=%5.2f,UnrealisedPnl=%5.2f,"
+						+ "RealisedPnl=%5.2f,MarginUsed=%5.2f,MarginAvailable=%5.2f,"
+						+ "OpenTrades=%d,AmountAvailableRatio=%1.2f,MarginRate=%1.2f", accountId, currency, netAssetValue,
+				totalBalance, unrealisedPnl, realisedPnl, marginUsed, marginAvailable, openTrades,
+				this.amountAvailableRatio, this.marginRate);
 	}
 
 	public T getAccountId() {

@@ -39,12 +39,10 @@ public class OandaAccountDataProviderService implements AccountDataProvider<Long
 	private static final Logger LOG = Logger.getLogger(OandaAccountDataProviderService.class);
 
 	private final String url;
-	private final String userName;
 	private final BasicHeader authHeader;
 
-	public OandaAccountDataProviderService(final String url, final String userName, final String accessToken) {
+	public OandaAccountDataProviderService(final String url, final String accessToken) {
 		this.url = url;
-		this.userName = userName;
 		this.authHeader = OandaUtils.createAuthHeader(accessToken);
 	}
 
@@ -57,7 +55,7 @@ public class OandaAccountDataProviderService implements AccountDataProvider<Long
 	}
 
 	String getAllAccountsUrl() {
-		return this.url + ACCOUNTS_RESOURCE + "?username=" + this.userName;
+		return this.url + ACCOUNTS_RESOURCE;
 	}
 
 	private Account<Long> getLatestAccountInfo(final Long accountId, CloseableHttpClient httpClient) {
@@ -108,26 +106,28 @@ public class OandaAccountDataProviderService implements AccountDataProvider<Long
 	public Collection<Account<Long>> getLatestAccountInfo() {
 		CloseableHttpClient httpClient = getHttpClient();
 		List<Account<Long>> accInfos = Lists.newArrayList();
+
 		try {
 			HttpUriRequest httpGet = new HttpGet(getAllAccountsUrl());
 			httpGet.setHeader(this.authHeader);
 
 			LOG.info(TradingUtils.executingRequestMsg(httpGet));
+
 			HttpResponse resp = httpClient.execute(httpGet);
 			String strResp = TradingUtils.responseToString(resp);
-			if (strResp != StringUtils.EMPTY) {
+
+			if (StringUtils.isNotEmpty(strResp)) {
 				Object jsonObject = JSONValue.parse(strResp);
 				JSONObject jsonResp = (JSONObject) jsonObject;
 				JSONArray accounts = (JSONArray) jsonResp.get(OandaJsonKeys.accounts);
-				/*
-				 * We are doing a per account json request because not all information is returned in the array of results
-				 */
+
 				for (Object o : accounts) {
 					JSONObject account = (JSONObject) o;
 					Long accountIdentifier = (Long) account.get(accountId);
 					Account<Long> accountInfo = getLatestAccountInfo(accountIdentifier, httpClient);
 					accInfos.add(accountInfo);
 				}
+
 			} else {
 				TradingUtils.printErrorMsg(resp);
 			}
